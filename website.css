@@ -1,0 +1,508 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    margin: 0 0.5rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #1e3c72;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Services section */
+#services {
+    padding: 5rem 2rem;
+    background-color: #f9f9f9;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #1e3c72;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service h3 {
+    color: #1e3c72;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1e3c72;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        padding: 1rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+}
+/* Center align navigation links */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #1e3c72;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Animated hero section with background */
+.hero {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('https://source.unsplash.com/random/1920x1080/?business') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-color: rgba(30,60,114,0.7); }
+    50% { background-color: rgba(72,126,176,0.7); }
+    100% { background-color: rgba(30,60,114,0.7); }
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    animation: fadeInUp 1s ease;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    animation: fadeInUp 1s ease 0.3s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Center align sections */
+section {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, #1e3c72, #4b79a1);
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+}
+/* Update color scheme to a more elegant palette */
+:root {
+    --primary-color: #2c3e50;  /* Dark slate gray */
+    --secondary-color: #34495e; /* Midnight blue */
+    --accent-color: #8e44ad;   /* Purple */
+    --gradient-start: #2c3e50;
+    --gradient-end: #3498db;
+}
+
+header {
+    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+}
+
+nav a:hover {
+    color: var(--accent-color);
+    background: linear-gradient(135deg, #2c3e50 0%, #8e44ad 100%);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: heroBackground 20s infinite linear;
+}
+
+@keyframes heroBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+section h2 {
+    color: var(--primary-color);
+}
+
+section h2::after {
+    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+}
+
+.service h3 {
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+}
+/* Enhanced visual styles */
+
+/* Smooth scrolling for better navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Add subtle hover effects to services */
+.service {
+    transform: translateY(0);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.95);
+}
+
+.service:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border-color: var(--accent-color);
+}
+
+/* Enhance typography */
+h1, h2, h3 {
+    letter-spacing: -0.5px;
+}
+
+.hero h2 {
+    font-size: 4rem;
+    background: linear-gradient(45deg, #fff, #e6e6e6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: titleGlow 3s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+    0%, 100% { text-shadow: 0 0 30px rgba(255,255,255,0.3); }
+    50% { text-shadow: 0 0 50px rgba(255,255,255,0.5); }
+}
+
+/* Add depth to navigation */
+nav {
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.95);
+}
+
+nav a {
+    border-radius: 5px;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+nav a:hover::after {
+    width: 80%;
+}
+
+/* Enhanced section styling */
+section {
+    position: relative;
+    overflow: hidden;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(30,60,114,0.2), transparent);
+}
+
+/* Footer enhancement */
+footer {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #fff, transparent);
+    opacity: 0.2;
+}
+/* Hero section background animation */
+.hero {
+    background: none !important; /* Remove existing background */
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://source.unsplash.com/random/1920x1080/?business,modern') no-repeat center center;
+    background-size: cover;
+    animation: panBackground 30s linear infinite;
+    z-index: -1;
+    filter: brightness(0.6);
+}
+
+@keyframes panBackground {
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+    25% {
+        transform: scale(1.1) translate(-2%, -1%);
+    }
+    50% {
+        transform: scale(1.1) translate(-1%, 1%);
+    }
+    75% {
+        transform: scale(1.1) translate(1%, -2%);
+    }
+    100% {
+        transform: scale(1.1) translate(0, 0);
+    }
+}
+
+.hero h2 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 1;
+}
+
+.hero p {
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 1;
+}
+/* Fix background image loading */
+.hero::before {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://source.unsplash.com/random/1920x1080/?business,modern') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 1;
+    will-change: transform; /* Optimize animation performance */
+}
+
+/* Ensure hero content is visible */
+.hero {
+    min-height: 80vh;
+    background: transparent; /* Remove any background color */
+    overflow: hidden; /* Prevent background from spilling */
+    isolation: isolate; /* Create stacking context */
+}
+
+/* Add fallback background color */
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    z-index: -2;
+}

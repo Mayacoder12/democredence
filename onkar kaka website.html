@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="website.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-title">
+                <img src="logo.jpeg" alt="CREDENCE Logo" class="logo" style="width: 50px; height: auto; display: inline-block; vertical-align: middle;">
+                <h1 style="display: inline-block; vertical-align: middle;">Credence</h1>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#offerings">Offerings</a>
+        <a href="#services">Services</a>
+        <a href="#case-studies">Case Studies</a>
+        <a href="#contact us">Contact Us</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-slideshow">
+            <div class="slide" style="background-image: url('bg14.jpg')"></div>
+            <div class="slide" style="background-image: url('bg\ 2.jpg')"></div>
+            <div class="slide" style="background-image: url('bg3.jpg')"></div>
+        </div>
+        <style>
+            .hero-slideshow {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+            
+            .slide {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                opacity: 0;
+                animation: slideshow 15s infinite;
+            }
+            
+            .slide:nth-child(1) {
+                animation-delay: 0s;
+            }
+            
+            .slide:nth-child(2) {
+                animation-delay: 5s;
+            }
+            
+            .slide:nth-child(3) {
+                animation-delay: 10s;
+            }
+            
+            @keyframes slideshow {
+                0%, 28% {
+                    opacity: 1;
+                }
+                33%, 95% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+        
+        <style>
+            .hero h2 {
+                background: linear-gradient(45deg, #1e3c72, #4b79a1, #8e44ad);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+                animation: gradientText 8s ease infinite;
+            }
+            
+            @keyframes gradientText {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+        </style>
+        <style>
+            .hero h2 {
+                background: linear-gradient(45deg, #e31837, #ff3366, #ff0844);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+                animation: gradientText 8s ease infinite;
+            }
+            
+            @keyframes gradientText {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+        </style>
+        <style>
+            .hero {
+                background: linear-gradient(45deg, #1e3c72, #2a5298);
+                padding: 100px 0;
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .hero::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                            url('https://source.unsplash.com/random/1920x1080/?business,modern') no-repeat center center;
+                background-size: cover;
+                z-index: -1;
+                animation: heroAnimation 20s ease-in-out infinite;
+            }
+
+            @keyframes heroAnimation {
+                0% {
+                    transform: scale(1.1) translate(0, 0);
+                }
+                25% {
+                    transform: scale(1.1) translate(-1%, -1%);
+                }
+                50% {
+                    transform: scale(1.1) translate(1%, 1%);
+                }
+                75% {
+                    transform: scale(1.1) translate(-1%, 1%);
+                }
+                100% {
+                    transform: scale(1.1) translate(0, 0);
+                }
+            }
+            h2 {
+                color: white;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            }
+        </style>
+        <style>
+            .gradient-text {
+                background: linear-gradient(45deg, #ffffff, #f0f0f0);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                text-shadow: none;
+            }
+        </style>
+        <h2 style="background: linear-gradient(45deg, white ); -webkit-background-clip: text; background-clip: text; color: transparent;">Welcome to Credence</h2>
+        <p>Your trusted partner for professional consulting services.</p>
+    </section>
+    <section id="excellence">
+        
+        <div class="excellence-content">
+            <div class="excellence-grid">
+                <div class="excellence-left">
+
+                    <h2>Excellence Through Lean</h2>
+                    <p>Excellence Through Lean
+                        Business Excellence involves the recreation of excellence in various business aspects like operations, strategy, leadership, processes, management, and customer focus</p>
+                    <div class="contact-btn-wrapper">
+                        <a href="#contact" class="contact-now-btn">Contact Now</a>
+                    </div>
+                    <style>
+                        .contact-btn-wrapper {
+                            margin-top: 2rem;
+                            text-align: left;
+                        }
+                        .contact-now-btn {
+                            display: inline-block;
+                            padding: 12px 30px;
+                            background: linear-gradient(45deg, #e31837, #ff3366);
+                            color: white;
+                            text-decoration: none;
+                            border-radius: 25px;
+                            font-weight: bold;
+                            transition: all 0.3s ease;
+                            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                        }
+                        .contact-now-btn:hover {
+                            transform: translateY(-2px);
+                            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+                            background: linear-gradient(45deg, #ff3366, #e31837);
+                        }
+                    </style>
+                </div>
+                <div class="excellence-right">
+                    <div class="excellence-items">
+                        <div class="excellence-item" data-info="Operational excellence: solving problems, leading, outperforming competitors, boosting revenues.">
+                            <span class="arrow animated-arrow">→</span>
+                            <span class="excellence-text">Operational Excellence</span>
+<style>
+    .excellence-text {
+        margin-left: 10px;
+    }
+    .excellence-info {
+        display: none;
+        margin-left: 10px;
+        color: #666;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+    }
+    .excellence-item:hover .excellence-info {
+        display: block;
+    }
+</style>
+                            <span class="excellence-info">Operational excellence: solving problems, leading, outperforming competitors, boosting revenues.</span>
+                        </div>
+                        <div class="excellence-item" data-info="Employee excellence: solving problems, leading, outperforming competitors, boosting revenues.">
+                            <span class="arrow animated-arrow">→</span>
+                            <span class="excellence-text">
+                            </span>
+                            
+                            Employee Excellence
+                            <span class="excellence-info">Employee involvement: staff actively contribute to achieving goals and decision-making.</span>
+                        </div>
+                        <div class="excellence-item" data-info="Tech excellence: solving problems, leading, outperforming competitors, boosting revenues.">
+                            <span class="arrow animated-arrow">→</span>
+                            Tech Excellence
+                            <span class="excellence-info">We specialize in research, technology, and business strategy for global corporates.</span>
+                        </div>
+                        <div class="excellence-item" data-info="Strategy excellence: solving problems, leading, outperforming competitors, boosting revenues.">
+                            <span class="arrow animated-arrow">→</span>
+                            Strategy Roadmap
+                            <span class="excellence-info">eveloping and executing strategic plans that align with the organization's mission, vision, and values, while considering market dynamics, competition, and stakeholder expectations.</span>
+                                
+      D
+                        </div>
+                    </div>
+                    <style>
+                        .animated-arrow {
+                            animation: arrowMove 2s ease-in-out infinite;
+                        }
+                        
+                        @keyframes arrowMove {
+                            0% { transform: translateY(0); }
+                            50% { transform: translateY(-5px); }
+                            100% { transform: translateY(0); }
+                        }
+                    </style>
+                    <div class="info-display"></div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .excellence-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+                padding: 2rem;
+            }
+            .excellence-items {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .excellence-item {
+                padding: 1rem;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                display: flex;
+                align-items: center;
+            }
+            .arrow {
+                margin-right: 1rem;
+                opacity: 0;
+                transition: all 0.3s ease;
+            }
+            .excellence-item:hover .arrow {
+                opacity: 1;
+                color: #1e3c72;
+            }
+            .info-display {
+                margin-top: 2rem;
+                padding: 1rem;
+                min-height: 100px;
+                border-left: 3px solid #1e3c72;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+        </style>
+        
+        <h2>Industries We Work With</h2>
+        <p class="section-desc">We've partnered with diverse industries, optimizing processes and driving growth tailored to specific needs</p>
+        
+        <div class="industries-grid">
+            <div class="industry-card">
+                <img src="engineering.png" alt="Engineering Projects Icon" class="industry-icon">
+                <h3>Engineering-Projects</h3>
+            </div>
+            
+            <div class="industry-card">
+                <img src="it.png" alt="IT Icon" class="industry-icon">
+                <h3>IT</h3>
+            </div>
+            
+            <div class="industry-card">
+                <img src="automobile.jpg" alt="Automobile Icon" class="industry-icon">
+                <h3>Automobile</h3>
+            </div>
+            
+            <div class="industry-card">
+                <img src="general-engineering.png" alt="General Engineering Icon" class="industry-icon">
+                <h3>General Engineering</h3>
+            </div>
+            
+            <div class="industry-card">
+                <img src="fmcg.png" alt="FMCG Icon" class="industry-icon">
+                <h3>FMCG</h3>
+            </div>
+            
+            <div class="industry-card">
+                <img src="chemical.png" alt="Chemical Icon" class="industry-icon">
+                <h3>Chemical</h3>
+            </div>
+            
+            <div class="industry-card">
+                <img src="pharmaceutical.png" alt="Pharmaceutical Icon" class="industry-icon">
+                <h3>Pharmaceutical</h3>
+            </div>
+            
+            <div class="industry-card">
+                <img src="food and beverage.png" alt="Food and Beverages Icon" class="industry-icon">
+                <h3>Food And Beverages</h3>
+            </div>
+        </div>
+
+        <style>
+            #industries {
+                padding: 4rem 2rem;
+                background: #f8f9fa;
+            }
+            
+            .section-desc {
+                text-align: center;
+                max-width: 800px;
+                margin: 1rem auto 3rem;
+                color: #666;
+            }
+            
+            .industries-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            
+            .industry-card {
+                background: white;
+                padding: 2rem;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                text-align: center;
+                transition: transform 0.3s ease;
+            }
+            
+            .industry-card:hover {
+                transform: translateY(-5px);
+            }
+            
+            .industry-icon {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 1rem;
+            }
+            
+            .industry-card h3 {
+                color: #1e3c72;
+                margin: 0;
+                font-size: 1.2rem;
+            }
+        </style>
+    </section>
+    </section>
+
+    <section id="services">
+        <style>
+            #services {
+                padding: 5rem 2rem;
+                background: #ffffff;
+            }
+
+            .services-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .services-title {
+                color: #1e3c72;
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .services-subtitle {
+                color: #666;
+                font-size: 1.2rem;
+                max-width: 800px;
+                margin: 0 auto 3rem;
+                line-height: 1.6;
+            }
+
+            .services-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+                padding: 2rem 0;
+            }
+
+            .service-card {
+                background: #f8f9fa;
+                padding: 2rem;
+                border-radius: 15px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
+            }
+
+            .service-card:hover {
+                transform: translateY(-10px);
+            }
+
+            .service-card h3 {
+                color: #1e3c72;
+                margin: 1rem 0;
+                font-size: 1.4rem;
+            }
+
+            .service-card p {
+                color: #666;
+                line-height: 1.6;
+            }
+        </style>
+
+        <div class="services-container">
+            <h2 class="services-title">Services Offered: Journey towards Excellence</h2>
+            <p class="services-subtitle">Embrace change for excellence. We're catalysts for early adoption, believing in the power of internal agents to drive organizational progress.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Optical Excellence</h3>
+                    <p>Expert guidance to transform your business vision into actionable strategies for sustainable growth.</p>
+                <ul style="list-style-type: disc; margin-top: 1rem; padding-left: 0; color: #851212; text-align: center; list-style-position: inside;">
+                
+                    <li>Lean</li>
+                    <li>Six Sigma</li>
+                    <li>Process Re-engineering</li>
+                    <li>Lean Layout Design</li>
+                    <li>ZED - Zero Effect Zero Defect</li>
+                </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Employee Excellence</h3>
+                    <p>Employee involvement engages staff in decision-making, fostering responsibility and innovation, while building a strong sense of community</p>
+
+                    <ul style="list-style-type: disc; margin-top: 1rem; padding-left: 0; color: #851212; text-align: center; list-style-position: inside;">
+                
+                        <li>Performance Management Systems</li>
+                        <li>Organization structure design</li>
+                        <li>Continues Improvement Culture</li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>
+                        Tech Excellence </h3>
+                       
+                    <p>We offer hands-on expertise in research, technology, innovation, and business strategy, crafting outcome-driven strategies for global corporates to achieve disruptive innovations.</p>
+                    <ul style="list-style-type: disc; margin-top: 1rem; padding-left: 0; color: #851212; text-align: center; list-style-position: inside;">
+                
+                        <li>AI based solutions for manufacturing industries</li>
+                        <li>Change maker in implementing the technology</li>
+                        <li>
+                            Digitization Services</li>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        
+        .service-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e0e0e0;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            background: linear-gradient(135deg, #ffffff 0%, #e8f0ff 100%);
+        }
+
+        .service-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #851212;
+            padding-bottom: 0.5rem;
+        }
+
+        .service-card p {
+            color: #34495e;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+    
+                <div style="margin-top: 2rem; margin-bottom: 2rem;">
+                    <p style="color: #333; font-size: 1.1rem; line-height: 1.6; width: 90%; margin: 0 auto; padding: 1.5rem; background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%); border-radius: 8px; box-shadow: 0 2px 6px rgba(133, 18, 18, 0.1); border-left: 3px solid #851212; text-align: justify; letter-spacing: 0.5px; word-spacing: 1px;">
+                        Credence drives operational excellence and technology adoption across industries. We empower internal teams to lead change.
+                    </p>
+                    
+                </div>
+                
+                <style>
+                    .about-section {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                        gap: 2rem;
+                        padding: 2rem;
+                    }
+                    
+                    .about-box {
+                        background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+                        padding: 2rem;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                        border: 1px solid #e0e0e0;
+                    }
+
+                    .about-box:hover {
+                        transform: translateY(-5px);
+                        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+                        background: linear-gradient(135deg, #ffffff 0%, #e8f0ff 100%);
+                    }
+
+                    .about-box h2 {
+                        color: #2c3e50;
+                        margin-bottom: 1rem;
+                        font-size: 1.5rem;
+                        border-bottom: 2px solid #851212;
+                        padding-bottom: 0.5rem;
+                    }
+
+                    .about-box p {
+                        color: #34495e;
+                        margin-bottom: 1.5rem;
+                    }
+                </style>
+                <p style="color: #666; font-size: 1.1rem; line-height: 1.6; max-width: 600px; margin: 0 auto;">
+                </p>
+            </div>
+        </div>
+        
+        </div>
+       
+    
+    </section>
+    
+    </section>
+    <section class="methodology-section">
+        <div class="container">
+            <h2 class="section-title">Our Methodology</h2>
+            <p class="section-subtitle">We employ a four-step method to facilitate your business's growth</p>
+            
+            <div class="methodology-grid">
+                <div class="methodology-box">
+                    <div class="step-number">1</div>
+                    <h3>Measure</h3>
+                    <p>We begin by thoroughly analyzing your current business processes and identifying areas for improvement.</p>
+                </div>
+
+                <div class="methodology-box">
+                    <div class="step-number">2</div>
+                    <h3>Improve</h3>
+                    <p>Based on our analysis, we develop strategic solutions tailored to your specific needs.</p>
+                </div>
+
+                <div class="methodology-box">
+                    <div class="step-number">3</div>
+                    <h3>Implement</h3>
+                    <p>We carefully execute the planned improvements while ensuring minimal disruption to your operations.</p>
+                </div>
+
+                <div class="methodology-box">
+                    <div class="step-number">4</div>
+                    <h3>Train</h3>
+                    <p>We provide comprehensive training to your team to ensure successful adoption of new processes.</p>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .methodology-section {
+                padding: 4rem 0;
+                background-color: #f9f9f9;
+            }
+
+            .section-title {
+                text-align: center;
+                color: #2c3e50;
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .section-subtitle {
+                text-align: center;
+                color: #666;
+                font-size: 1.2rem;
+                margin-bottom: 3rem;
+            }
+
+            .methodology-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 2rem;
+                padding: 2rem;
+            }
+
+            .methodology-box {
+                background: white;
+                padding: 2rem;
+                border-radius: 10px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                text-align: center;
+                position: relative;
+                transition: transform 0.3s ease;
+            }
+
+            .methodology-box:hover {
+                transform: translateY(-5px);
+            }
+
+            .step-number {
+                background: #851212;
+                color: white;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;
+                font-weight: bold;
+                margin: 0 auto 1rem;
+            }
+
+            .methodology-box h3 {
+                color: #2c3e50;
+                margin-bottom: 1rem;
+                font-size: 1.3rem;
+            }
+
+            .methodology-box p {
+                color: #666;
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+        </style>
+    </section>
+    <section id="impact" class="impact-section">
+        <h2>Our Impact in the Real World</h2>
+        <p class="section-description">Explore our Case Study Showcase for real-world success stories showcasing our impactful solutions across diverse industries</p>
+        <div class="case-studies">
+            <div class="case-study-box">
+                <h3>Facility Layout</h3>
+                <p class="preview-text">Discover how our implementation of lean principles transformed our workspace and maximized efficiency in our operations.</p>
+                <div class="full-content" style="display: none;">
+                    <p>Our comprehensive facility layout optimization project delivered remarkable results:</p>
+                    <div class="read-more-content" onclick="window.location.href='facility-layout-case-study.html'">
+                        <h3>Facility Layout Case Study</h3>
+                        
+                        <div class="case-study-section">
+                            <h3>Introduction</h3>
+                            <p>Lean deals with the flow. Plotting a shop floor layout for greenfield project as per flow is an opportunity to ensure "First Time Right layout". Considering material movement and material handling tools for heavy fabrication industry was most challenging part. This case study speaks about implementation while coordinating with architecture to deliver maximum value to the customer.</p>
+                        </div>
+
+                        <div class="case-study-section">
+                            <h3>The Challenge</h3>
+                            <p>We were tasked with designing a factory layout for a German MNC specializing in acoustic and noise reduction applications. The project covered a 9-acre greenfield site, with the main challenge being space optimization for increased market demand while maintaining operational efficiency.</p>
+                        </div>
+
+                        <div class="case-study-section">
+                            <h3>Our Approach</h3>
+                            <ul>
+                                <li>Divided processes by product families instead of traditional bay concepts</li>
+                                <li>Created Relationship (REL) charts to understand process interdependencies</li>
+                                <li>Designed master layout with focus on unidirectional flow</li>
+                                <li>Implemented separate zones for steel and non-steel fabrication</li>
+                                <li>Introduced new assembly area to reduce reverse material movement</li>
+                            </ul>
+                        </div>
+
+                        <div class="case-study-section">
+                            <h3>Implementation Details</h3>
+                            <p>The project was executed in multiple phases:</p>
+                            <ul>
+                                <li>Master layout development</li>
+                                <li>Internal area-wise layout design</li>
+                                <li>Micro-detailing of facilities</li>
+                            </ul>
+                        </div>
+
+                        <div class="case-study-section">
+                            <h3>Key Considerations</h3>
+                            <ul>
+                                <li>Material handling equipment specifications</li>
+                                <li>EOT crane requirements and placement</li>
+                                <li>Future expansion possibilities</li>
+                                <li>Architectural constraints</li>
+                                <li>Management requirements and industry norms</li>
+                            </ul>
+                        </div>
+
+                        
+                    </div>
+                    <ul>
+                        <li>Reduced material movement by 40%</li>
+                        <li>Improved workflow efficiency by 35%</li>
+                        <li>Enhanced workspace utilization by implementing 5S principles</li>
+                        <li>Created ergonomic workstations for better employee comfort</li>
+                        <li>Implemented visual management systems</li>
+                    </ul>
+                </div>
+                <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+            </div>
+
+            <div class="case-study-box">
+                <h3>Six Sigma Implementation</h3>
+                <p class="preview-text">Data-driven methodology for minimizing defects, reducing costs, and enhancing quality.</p>
+                <div class="full-content" style="display: none;">
+                    <p>Our Six Sigma implementation achieved significant improvements:</p>
+                    <div class="case-study-section">
+                        <h3>Project Overview</h3>
+                        <p>A comprehensive Six Sigma project focused on reducing weight variation in FMCG packing machines, resulting in significant improvements in efficiency and cost savings.</p>
+                    </div>
+
+                    <div class="case-study-section">
+                        <h3>Challenge</h3>
+                        <p>Addressing increasing loss percentages and product giveaways in a reputed FMCG company's packing operations, which was leading to material waste and increased operational costs.</p>
+                    </div>
+
+                    <div class="case-study-section">
+                        <h3>Methodology</h3>
+                        <ul>
+                            <li>Implemented control charts for performance monitoring</li>
+                            <li>Conducted root cause analysis using fishbone diagrams</li>
+                            <li>Analyzed 4M factors (Man, Machine, Material, Method)</li>
+                            <li>Developed comprehensive action plans with cross-functional teams</li>
+                            <li>Created SOPs and checklists for sustained improvement</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study-section">
+                        <h3>Key Solutions</h3>
+                        <ul>
+                            <li>Standardized machine operating procedures</li>
+                            <li>Implemented strict weight calibration protocols</li>
+                            <li>Improved product pouring frequency controls</li>
+                            <li>Enhanced operator training and supervision</li>
+                            <li>Established daily tracking systems</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study-section">
+                        <h3>Results</h3>
+                        <ul>
+                            <li>Achieved 66% reduction in weight variation</li>
+                            <li>Minimized product giveaways and material losses</li>
+                            <li>Improved process stability and robustness</li>
+                            <li>Enhanced quality control measures</li>
+                            <li>Established sustainable improvement systems</li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li>Reduced defect rates by 99.99966%</li>
+                        <li>Achieved cost savings of over $1M annually</li>
+                        <li>Implemented DMAIC methodology across processes</li>
+                        <li>Trained 50+ Green Belts and Black Belts</li>
+                        <li>Established sustainable quality control systems</li>
+                    </ul>
+                </div>
+                <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+            </div>
+        </div>
+
+        <style>
+            .case-studies {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+                margin: 2rem auto;
+                max-width: 1200px;
+            }
+
+            .case-study-box {
+                background: white;
+                padding: 2rem;
+                border-radius: 10px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
+            }
+
+            .case-study-box:hover {
+                transform: translateY(-5px);
+            }
+
+            .case-study-box h3 {
+                color: #2c3e50;
+                margin-bottom: 1rem;
+                font-size: 1.5rem;
+            }
+
+            .case-study-box p {
+                color: #666;
+                margin-bottom: 1rem;
+                line-height: 1.6;
+            }
+
+            .case-study-box ul {
+                color: #666;
+                margin-left: 1.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .read-more-btn {
+                background: #851212;
+                color: white;
+                border: none;
+                padding: 0.8rem 1.5rem;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background 0.3s ease;
+            }
+
+            .read-more-btn:hover {
+                background: #6a0e0e;
+            }
+        </style>
+
+        <script>
+            function toggleContent(button) {
+                const caseStudyBox = button.parentElement;
+                const fullContent = caseStudyBox.querySelector('.full-content');
+                const previewText = caseStudyBox.querySelector('.preview-text');
+                
+                if (fullContent.style.display === 'none') {
+                    fullContent.style.display = 'block';
+                    previewText.style.display = 'none';
+                    button.textContent = 'Read Less';
+                } else {
+                    fullContent.style.display = 'none';
+                    previewText.style.display = 'block';
+                    button.textContent = 'Read More';
+                }
+            }
+        </script>
+        
+        <style>
+            .impact-section {
+                padding: 4rem 2rem;
+                background: #f8f9fa;
+            }
+
+            .impact-section h2 {
+                text-align: center;
+                color: #2c3e50;
+                margin-bottom: 1.5rem;
+                font-size: 2.5rem;
+            }
+
+            .section-description {
+                text-align: center;
+                color: #666;
+                max-width: 800px;
+                margin: 0 auto 3rem;
+                font-size: 1.1rem;
+                line-height: 1.6;
+            }
+        </style>
+    </section>
+    <section class="clientele-section">
+        <h2>Clientele</h2>
+        <p class="section-description">Our clients bring diversity to our business ecosystem</p>
+        <div class="client-grid">
+            <div class="logo-slider">
+                <div class="logo-slide">
+                    <img src="logo1.webp" alt="Client Logo 1">
+                    <img src="logo2.jpg" alt="Client Logo 2">
+                    <img src="logo3.webp" alt="Client Logo 3">
+                    <img src="logo4.png" alt="Client Logo 4">
+                    <img src="logo5.png" alt="Client Logo 5">
+                    <img src="logo6.jpg" alt="Client Logo 6">
+                    <img src="logo7.webp" alt="Client Logo 6">
+                    <!-- Duplicate logos for seamless loop -->
+                    <img src="logo1.webp" alt="Client Logo 1">
+                    <img src="logo2.jpg" alt="Client Logo 2">
+                    <img src="logo3.webp" alt="Client Logo 3">
+                    <img src="logo4.png" alt="Client Logo 4">
+                    <img src="logo5.png" alt="Client Logo 5">
+                    <img src="logo6.jpg" alt="Client Logo 6">
+                    <img src="logo7.webp" alt="Client Logo 6">
+                </div>
+            </div>
+
+            <style>
+                .logo-slider {
+                    width: 100%;
+                    overflow: hidden;
+                    position: relative;
+                }
+
+                .logo-slide {
+                    display: flex;
+                    animation: slide 20s linear infinite;
+                }
+
+                .logo-slide img {
+                    width: 200px;
+                    height: auto;
+                    margin: 0 20px;
+                    object-fit: contain;
+                }
+
+                @keyframes slide {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translateX(-100%);
+                    }
+                }
+            </style>
+            <!-- Client logos/names can be added here -->
+        </div>
+        <style>
+            .clientele-section {
+                padding: 4rem 2rem;
+                background: #fff;
+            }
+
+            .clientele-section h2 {
+                text-align: center;
+                color: #2c3e50;
+                margin-bottom: 1.5rem;
+                font-size: 2.5rem;
+            }
+
+            .client-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 2rem;
+            }
+        </style>
+    </section>
+    
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        
+        <p class="section-description">For any inquiries, we're here to assist you. Reach out using the form below or email us at onkar.kulkarni@credenceconsultant.com</p>
+        
+        <div class="contact-container">
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.5757436616397!2d73.82340731489443!3d18.45774798744771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc295236922c1c1%3A0x84a2ca4533295381!2sSinhagad%20Rd%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="map-controls">
+                    <button onclick="toggleMapType()" class="map-type-btn">Toggle Satellite View</button>
+                </div>
+                <script>
+                    function toggleMapType() {
+                        const iframe = document.querySelector('.map-container iframe');
+                        const currentSrc = iframe.src;
+                        if (currentSrc.includes('&maptype=roadmap') || !currentSrc.includes('&maptype=')) {
+                            iframe.src = currentSrc.replace('&maptype=roadmap', '') + '&maptype=satellite';
+                        } else {
+                            iframe.src = currentSrc.replace('&maptype=satellite', '&maptype=roadmap');
+                        }
+                    }
+                </script>
+                <style>
+                    .map-controls {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        z-index: 1;
+                    }
+                    
+                    .map-type-btn {
+                        padding: 8px 16px;
+                        background: #2c3e50;
+                        color: white;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        font-size: 0.9rem;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+                    }
+
+                    .map-type-btn:hover {
+                        background: #34495e;
+                    }
+                </style>
+            </div>
+
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="country" name="country" required>
+                            <option value="">Select Country</option>
+                            <option value="IN">India</option>
+                            <option value="US">United States</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="CA">Canada</option>
+                            <option value="AU">Australia</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                    </div>
+                    <button type="submit" class="connect-btn">Connect</button>
+                </form>
+            </div>
+        </div>
+
+        <style>
+            .contact-section {
+                padding: 4rem 2rem;
+                background: #f8f9fa;
+            }
+
+            .contact-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .map-container {
+                width: 100%;
+                height: 100%;
+                min-height: 450px;
+            }
+
+            .contact-form {
+                padding: 2rem;
+                background: white;
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            }
+
+            .form-group {
+                margin-bottom: 1.5rem;
+            }
+
+            .form-group input,
+            .form-group select {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                font-size: 1rem;
+            }
+
+            .connect-btn {
+                width: 100%;
+                padding: 12px;
+                background: #2c3e50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 1.1rem;
+                cursor: pointer;
+                transition: background 0.3s ease;
+            }
+
+            .connect-btn:hover {
+                background: #34495e;
+            }
+
+            @media (max-width: 768px) {
+                .contact-container {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </section>
+    <style>
+        footer {
+            display: flex;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+            color: white;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .footer-logo {
+            width: 100px;
+            height: auto;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <footer>
+        <div class="footer-content">
+            <img src="logo.jpeg" alt="Credence Logo" class="footer-logo">
+            <p>&copy; 2024 Credence. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <style>
+
+        
